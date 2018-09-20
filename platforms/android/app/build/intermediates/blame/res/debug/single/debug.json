@@ -1,0 +1,282 @@
+[
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-hdpi_screen.png.flat",
+        "source": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\src\\main\\res\\drawable-land-hdpi\\screen.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_rzp_logo.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable-xxxhdpi-v4\\rzp_logo.png"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_icon.png.flat",
+        "source": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\src\\main\\res\\mipmap-mdpi\\icon.png"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_rzp_logo.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable-xxhdpi-v4\\rzp_logo.png"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rzp_green_button.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable\\rzp_green_button.xml"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-ldpi_screen.png.flat",
+        "source": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\src\\main\\res\\drawable-land-ldpi\\screen.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml_config.xml.flat",
+        "source": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\src\\main\\res\\xml\\config.xml"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_icon.png.flat",
+        "source": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\src\\main\\res\\mipmap-hdpi\\icon.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-xxxhdpi_screen.png.flat",
+        "source": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\src\\main\\res\\drawable-port-xxxhdpi\\screen.png"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-xxxhdpi_screen.png.flat",
+        "source": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxxhdpi\\screen.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rzp_loader_circle.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable\\rzp_loader_circle.xml"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_rzp_logo.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable-xxxhdpi-v4\\rzp_logo.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_rzp_name_logo.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable-xxhdpi-v4\\rzp_name_logo.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_icon.png.flat",
+        "source": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\src\\main\\res\\mipmap-xhdpi\\icon.png"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-mdpi_screen.png.flat",
+        "source": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\src\\main\\res\\drawable-land-mdpi\\screen.png"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rzp_border_bottom.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable\\rzp_border_bottom.xml"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-mdpi_screen.png.flat",
+        "source": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\src\\main\\res\\drawable-port-mdpi\\screen.png"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-xxxhdpi_screen.png.flat",
+        "source": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\src\\main\\res\\drawable-port-xxxhdpi\\screen.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-xxhdpi_screen.png.flat",
+        "source": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxhdpi\\screen.png"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-hdpi_screen.png.flat",
+        "source": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\src\\main\\res\\drawable-port-hdpi\\screen.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rzp_white_border_black_bg.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable\\rzp_white_border_black_bg.xml"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_rzp_magic_base.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\layout\\rzp_magic_base.xml"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rzp_secured_by_bg.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable\\rzp_secured_by_bg.xml"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rzp_border_bottom.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable\\rzp_border_bottom.xml"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_rzp_loader.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\layout\\rzp_loader.xml"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-xxhdpi_screen.png.flat",
+        "source": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\src\\main\\res\\drawable-port-xxhdpi\\screen.png"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\raw_rzp_config.json.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\raw\\rzp_config.json"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-xhdpi_screen.png.flat",
+        "source": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\src\\main\\res\\drawable-land-xhdpi\\screen.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rzp_green_button.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable\\rzp_green_button.xml"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_icon.png.flat",
+        "source": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\src\\main\\res\\mipmap-xhdpi\\icon.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rzp_border.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable\\rzp_border.xml"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rzp_secured_by_bg.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable\\rzp_secured_by_bg.xml"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_rzp_logo.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable-xhdpi-v4\\rzp_logo.png"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rzp_border.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable\\rzp_border.xml"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-ldpi_screen.png.flat",
+        "source": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\src\\main\\res\\drawable-port-ldpi\\screen.png"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rzp_poweredby.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable\\rzp_poweredby.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_icon.png.flat",
+        "source": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\src\\main\\res\\mipmap-hdpi\\icon.png"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-xhdpi_screen.png.flat",
+        "source": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\src\\main\\res\\drawable-land-xhdpi\\screen.png"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_icon.png.flat",
+        "source": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\icon.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_rzp_logo.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable-xhdpi-v4\\rzp_logo.png"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_rzp_name_logo.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable-xxhdpi-v4\\rzp_name_logo.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-hdpi_screen.png.flat",
+        "source": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\src\\main\\res\\drawable-port-hdpi\\screen.png"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_rzp_logo.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable-mdpi-v4\\rzp_logo.png"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-xxhdpi_screen.png.flat",
+        "source": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\src\\main\\res\\drawable-port-xxhdpi\\screen.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_rzp_logo.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable-hdpi-v4\\rzp_logo.png"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_icon.png.flat",
+        "source": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon.png"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-xhdpi_screen.png.flat",
+        "source": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\src\\main\\res\\drawable-port-xhdpi\\screen.png"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-xxhdpi_screen.png.flat",
+        "source": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxhdpi\\screen.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-mdpi_screen.png.flat",
+        "source": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\src\\main\\res\\drawable-port-mdpi\\screen.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_rzp_logo.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable-xxhdpi-v4\\rzp_logo.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-hdpi_screen.png.flat",
+        "source": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\src\\main\\res\\drawable-land-hdpi\\screen.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_icon.png.flat",
+        "source": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\src\\main\\res\\mipmap-mdpi\\icon.png"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml_config.xml.flat",
+        "source": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\src\\main\\res\\xml\\config.xml"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rzp_white_border_black_bg.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable\\rzp_white_border_black_bg.xml"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-mdpi_screen.png.flat",
+        "source": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\src\\main\\res\\drawable-land-mdpi\\screen.png"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-ldpi_screen.png.flat",
+        "source": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\src\\main\\res\\drawable-land-ldpi\\screen.png"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_rzp_logo.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable-hdpi-v4\\rzp_logo.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-xxxhdpi_screen.png.flat",
+        "source": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxxhdpi\\screen.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_rzp_loader.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\layout\\rzp_loader.xml"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-ldpi_icon.png.flat",
+        "source": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\src\\main\\res\\mipmap-ldpi\\icon.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_icon.png.flat",
+        "source": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-ldpi_screen.png.flat",
+        "source": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\src\\main\\res\\drawable-port-ldpi\\screen.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_rzp_logo.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable-mdpi-v4\\rzp_logo.png"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_rzp_magic_base.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\layout\\rzp_magic_base.xml"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-ldpi_icon.png.flat",
+        "source": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\src\\main\\res\\mipmap-ldpi\\icon.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rzp_poweredby.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable\\rzp_poweredby.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_icon.png.flat",
+        "source": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\icon.png"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\raw_rzp_config.json.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\raw\\rzp_config.json"
+    },
+    {
+        "merged": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-xhdpi_screen.png.flat",
+        "source": "G:\\Angular\\Cozyorder\\CozyOrders\\platforms\\android\\app\\src\\main\\res\\drawable-port-xhdpi\\screen.png"
+    },
+    {
+        "merged": "G:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rzp_loader_circle.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\checkout-1.4.9.aar\\2ae6ef3817a0e9901b95939274705281\\res\\drawable\\rzp_loader_circle.xml"
+    }
+]

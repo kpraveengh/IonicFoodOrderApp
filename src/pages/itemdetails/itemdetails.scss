@@ -1,0 +1,11 @@
+
+@import "theme/variables.scss";
+.item-price{
+    font-size: 20px;
+    font-weight: 500;
+    color:map-get($colors, themecolor);
+    margin-top: 18px;
+}
+.top-nav-cart-icon{
+    width:24px;
+}

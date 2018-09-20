@@ -1,0 +1,22 @@
+page-orderhistory {
+.order-history-data 
+{
+    border-left:1px solid map-get($colors, themecolor);
+        h2{
+            color:map-get($colors, themecolor);
+            margin:5px 0px;
+        }       
+    }
+    .price-orderdate{
+        font-size:14px;
+        font-weight: normal;
+        color:map-get($colors, themecolor )
+    }
+
+    .glyphicon { margin-right:5px;}
+.glyphicon-heart { color:#e74c3c;}
+.glyphicon-comment { color:#27ae60;}
+.separator { padding-right:5px;padding-left:5px; }
+.section-box hr {margin-top: 0;margin-bottom: 5px;border: 0;border-top: 1px solid rgb(199, 199, 199);}
+}
+

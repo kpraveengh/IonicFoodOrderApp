@@ -1,0 +1,81 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Item details</ion-title>
+      <ion-buttons end class="top-nav-cart-icon">
+            <!-- <button ion-button icon-only (click)="goToCart()">
+                    <img src="assets/imgs/cart.png" >
+                    <span class="cart-qty-block">57</span>
+            </button> -->
+      </ion-buttons>
+    
+    </ion-navbar>
+  </ion-header>
+
+  <ion-content>
+      <ion-row class="menu-list-items">
+          <ion-col>
+              <ion-card>
+        
+                  <ion-item>
+                    <ion-avatar item-start>
+                      <img src="assets/imgs/bubble-logo.png">
+                    </ion-avatar>
+                    <h2>Super Women Thickshake</h2>
+                  </ion-item>
+                  <img src="assets/imgs/bubble-promo.png">
+                  <ion-row>
+                  <ion-navbar color="light" class="menu-category-list">
+                      <ion-segment [(ngModel)]="menu">
+                        <ion-segment-button value={{menu}} *ngFor="let menu of menuNames" color="themecolor">
+                            {{menu}}
+                        </ion-segment-button>
+                        
+                        </ion-segment>
+                      </ion-navbar>
+                      
+                      <ion-row>
+                          <ion-col>
+                       <p>
+                            what you have to do is determine the line-height you want to play with. So, for example, if I have a button who's height is truly 90px but I want the line-height to be 80px I would have something like
+                        </p>
+                        </ion-col>
+                   </ion-row>
+                 
+
+                    <ion-row>
+                        <ion-col col-8>
+                            <ion-item class="item-status-block">
+                                <h1 class="item-price">&#8377;&nbsp;58.00
+                                </h1>
+                                <ion-badge small outline color="themecolor">24 Available</ion-badge>
+                                <ion-badge small outline color="themecolor">5 Min Wait</ion-badge> 
+                          </ion-item>                  
+                        </ion-col>
+                        <ion-col col-4>
+                            <button ion-button round default item-end color="themecolor"><ion-icon ios="ios-add" md="md-add"></ion-icon>&nbsp;Add</button>                                          
+                        </ion-col>
+                    
+                      </ion-row>
+                    
+                    </ion-row>
+
+
+
+
+
+           
+                </ion-card>
+                </ion-col>
+              </ion-row>
+
+
+
+    
+  </ion-content>
+  
+  <ion-footer *ngIf="cartLength > 0">
+        <cart cartdata='cartitem'></cart>
+      </ion-footer>

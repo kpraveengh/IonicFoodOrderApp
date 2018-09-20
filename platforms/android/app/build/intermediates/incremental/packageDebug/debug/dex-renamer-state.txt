@@ -1,0 +1,4 @@
+#Wed Sep 19 12:56:14 IST 2018
+base.0=G\:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+renamed.0=classes.dex
+file.0=G\:\\Angular\\CozyOrderResto\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex

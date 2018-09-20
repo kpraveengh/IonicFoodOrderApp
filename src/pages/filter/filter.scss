@@ -1,0 +1,22 @@
+page-filter {
+
+    .customTrans {
+        -webkit-transition: all 1s ease-out;
+        -moz-transition: all 1s ease-out;
+        -ms-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
+        transition: all 1s ease-out;  
+        }
+        .filter-sort-header{
+            background: #430497;
+            color: #fff;
+        }
+
+}
+// ion-modal{
+//     max-height: 50% !important;
+//     bottom:0px !important;
+//     position: absolute;
+//     z-index: 9999;
+//     top:auto !important;
+// }

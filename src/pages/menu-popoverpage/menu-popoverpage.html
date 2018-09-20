@@ -1,0 +1,11 @@
+
+<ion-content>
+    <ion-list>       
+        <ion-item class="bottom-menu-title" *ngFor="let menu of storeMenu" > 
+       
+         <ion-label color="dark" (click)="scrollToElement(menu.name)">{{menu.name}}</ion-label>
+         
+        </ion-item>
+      </ion-list>
+
+</ion-content>

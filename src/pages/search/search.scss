@@ -1,0 +1,39 @@
+page-search {
+
+    .menu-btn-search{
+        position: absolute;
+    color: #440499;
+    background: #fff;
+    }
+    .recent-search-list{
+
+        button{
+            color: #440499ab;
+            font-size: 13px;
+        }
+        h2{
+            font-size: 13px;
+            margin: 12px 10px 0px 10px;
+            color:#777;
+            font-weight: 400;
+        }
+    }
+    .searchbar-md .searchbar-input{
+        padding:2px 50px;
+        font-size: 13px;
+    }
+
+    ion-label.selected-location-title.label.label-md {
+        font-size: 12px;
+        vertical-align: middle;
+        position: relative;
+        font-weight: normal;
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}

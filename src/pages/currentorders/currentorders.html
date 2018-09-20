@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Running Orders</ion-title>
+    </ion-navbar>
+
+  </ion-header>
+  <ion-content>
+
+
+      <ion-card class="order-history-data" (click)="goToOrderView()">
+          <ion-item>
+            <h2>Thick Shake Factory</h2>
+            <p>MilkShake, Chocolate Candies ..</p>
+            <span class="price-orderdate">Total &#8377;&nbsp;58.00
+              </span>,
+              <span class="price-orderdate"><ion-icon name="calendar"></ion-icon> 03/12/2018 02:30:20 PM</span>                  
+            <ion-icon small item-end color="success" name="arrow-forward"></ion-icon>
+     
+          </ion-item>
+        </ion-card>
+      </ion-content>

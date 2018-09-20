@@ -1,0 +1,100 @@
+page-signup {
+
+
+        #login-block{
+            background: #1c2627 url("../assets/imgs/login-bg.png") no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            position: fixed;
+         form{    
+            //  background-color:#f4f4f480;
+              margin: 0 auto;
+            display:table;
+            width:100%;
+            position: fixed;
+            top:20%;
+            left:0px;
+            border-radius: 20px;
+           padding:20px;
+         }
+         input[type='text'], input[type="password"] { 
+            outline: none;
+        }
+        *:focus {
+            outline: none;
+        }
+         login-block-input-section{
+            margin:0 auto;
+         }
+         .login-block-option-one{
+             margin:20px 0px;
+             border-radius: 30px;
+             border:0.5px solid map-get($colors, themecolor)
+         }
+         .login-block-option-two{
+            border-radius: 30px;
+            border:0.5px solid map-get($colors, themecolor)
+        }
+         .login-btn-bottom{
+            margin:0 auto;
+         }
+         .text-input-md, .text-input-ios{
+             margin:0px;
+         }
+        
+        }
+        .login-btn{
+            padding:20px;
+        }
+        .login-second-style{
+            ion-content{
+                position: fixed;
+            }
+            
+            .login-title-grid{
+                .login-title-bg{
+                    background-image: url('../assets/imgs/login-bg-1.png');
+                    min-height: 230px;
+                    
+                }
+                div{
+                    background: url("../assets/imgs/location-ng.png") no-repeat center center;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+                }
+                
+                h2{
+                    color:#fff;
+                    text-align: center;
+                }
+                position:fixed;min-height: 40%;background-image: linear-gradient(to left, #440499, #4804aa, #4c03bc, #4f04ce, #5205e1);
+            }
+            .login-info-grid{
+                position: fixed;top: 20%;
+          
+        
+        .item-input .label-ios, .item-select .label-ios, .item-datetime .label-ios {
+            color: #4e04c770 !important;
+            font-size: 12px;
+        }
+        
+        .label-ios-light, .item-input .label-ios-light, .item-select .label-ios-light, .item-datetime .label-ios-light {
+            color: #4a04b3;
+            font-size: 12px;
+        }
+        .checkbox-ios-primary .checkbox-checked {
+            border-color: #4803ad;
+            background-color: #4604a2;
+        }
+        }
+        
+        }
+        .item-input .label-md, .item-select .label-md, .item-datetime .label-md {
+            color: #673ab76b !important;
+            font-size: 12px;
+        }
+        }

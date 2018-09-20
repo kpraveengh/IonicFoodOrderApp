@@ -1,0 +1,316 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-buttons class="top-nav-cart-icon">
+      <!-- <button ion-button icon-only (click)="goToBack()">
+               Back
+          </button>         -->
+    </ion-buttons>
+    <ion-row class="item-filter-store animated fadeInTop" *ngIf="prodcutSearchbar">
+      <ion-searchbar class="filterProducts" (keyup)="searchFilterProducts($event)" name="searchTerm" placeholder="Enter dish name"
+        animated="true" showCancelButton="false"></ion-searchbar>
+    </ion-row>
+    <ion-buttons end>
+      <button *ngIf="!prodcutSearchbar" ion-button icon-only class="top-nav-search" (click)="prodcutSearchToggle()">
+        <ion-icon name="search"></ion-icon>
+      </button>
+      <button *ngIf="prodcutSearchbar" ion-button icon-only class="top-nav-search" (click)="prodcutSearchToggle()">
+        <ion-icon name="close-circle"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content fullscreen #myContent>
+
+  <!-- test -->
+
+
+
+  <div class="store-info-top">
+    <div>
+      <div class="store-title-top">
+        <div class="PpfYW">{{ outletName }}</div>
+      </div>
+      <div class="store-address-top">
+        <div class="store-address">{{ outletCat }}</div>
+      </div>
+      <hr>
+      <div class="store-address-top">
+        <div class="store-address">{{ outletAddress }}</div>
+      </div>
+    </div>
+    <div class="_3ae0I _3SklS">
+      <label class="diet-switch switch">
+        <input class="switch-input" type="checkbox" [(ngModal)]="dietType" />
+        <span class="switch-label" (click)="dietFilterProducts()" data-on="Veg" data-off="All"></span>
+        <span class="switch-handle"></span>
+      </label>
+    </div>
+
+  </div>
+
+
+
+  <!-- test -->
+  <div *ngFor="let item of information; let i = index " color="primary" [id]="item.menu_name">
+
+    <div *ngIf="item.level == 1">
+      <h2 ion-item>
+        {{ item.menu_name }}
+      </h2>
+      <div class="item-with-image">
+        <ion-row>
+          <ion-col col-6 *ngFor="let product of item.pages; let j = index">
+            <img [src]="product.prodimage">
+            <span class="item-title"><span class="diet-icon"><img [src]="product.diet"> </span>{{product.prodname}}</span>
+            <ion-row>
+              <ion-col col-5>
+                <h1 class="item-price pull-left">&#8377;{{product.price}}<br>
+                  <span *ngIf="product.offer" small class="item-bottom-offer">{{product.offer}}</span>
+                </h1>
+              </ion-col>
+              <ion-col col-7 class="addBtn">
+
+                <button [hidden]="hidebutton[product.prodnum]" ion-button small item-end color="themecolor"
+                  (click)="addTocart(product)">
+                  <ion-icon ios="ios-add" md="md-add"></ion-icon>&nbsp;Add
+                </button>
+                <ion-buttons style="width:72px;">
+                  <div [hidden]="!hidebutton[product.prodnum]">
+                    <input (click)="decrementQty(product,index)" type='button' value='-' class='qtyminus' field='quantity' />
+                    <input type='text' readonly name='quantity' [(ngModel)]="cartProductQty[product.prodnum]"
+                      class='qty' />
+                    <input (click)="incrementQty(product)" type='button' value='+' class='qtyplus' field='quantity' />
+                  </div>
+                </ion-buttons>
+                <span *ngIf="product.addons" class="custom-option"> Customisable </span>
+              </ion-col>
+            </ion-row>
+
+            <ion-badge class="duration_avaialability_badge" small outline color="themecolor">24 Available</ion-badge>
+            <ion-badge class="duration_avaialability_badge" small outline color="themecolor">5 Minutes</ion-badge>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <ion-list class="accordion-list">
+    <!-- First Level -->
+    <ion-list-header *ngFor="let item of information; let i = index" no-padding [class]="'level' +item.level" [id]="item.menu_name">
+
+      <div>
+        <!-- Toggle Button -->
+        <h2 ion-item>
+          {{ item.menu_name }}
+        </h2>
+
+        <ion-list>
+          <!-- Second Level -->
+          <ion-list-header *ngFor="let product of item.pages; let j = index" no-padding>
+            <!-- Toggle Button -->
+            <!-- image checkon products -->
+            <button ion-item (click)="toggleItem(i, j)" *ngIf="product.products" class="child" detail-none>
+              <ion-icon item-end name="arrow-forward" *ngIf="!product.open"></ion-icon>
+              <ion-icon item-end name="arrow-down" *ngIf="product.open"></ion-icon>
+              <span>{{ product.page_name }}</span><br>
+              <span class="page-tagline text-small">Pork chop meatloaf rump, meatball.</span>
+            </button>
+
+            <!-- Direct Add Button as Fallback -->
+            <div *ngIf="!product.products && item.level != 1" ion-item detail-none class="child-item" text-wrap
+              no-lines>
+
+              <ion-row class="item-status-block">
+
+                <ion-col col-8>
+                  <h2 class="item-title"><span class="diet-icon"><img [src]="product.diet"> </span>{{product.prodname}}</h2>
+                  <p class="page-tagline text-small">{{ product.information }}</p>
+
+                  <ion-badge class="duration_avaialability_badge" small outline color="themecolor">24 Available</ion-badge>
+                  <ion-badge class="duration_avaialability_badge" small outline color="themecolor">5 Min Wait</ion-badge>
+
+                  &nbsp;|&nbsp;<span class="item-price">&#8377;{{product.price1}}<br>
+                    <span *ngIf="product.offer" small class="item-bottom-offer">{{product.offer}}</span>
+                  </span>
+                </ion-col>
+                <ion-col col-4 class="addBtn">
+                  <button [hidden]="hidebutton[product.prodnum]" ion-button small item-end color="themecolor"
+                    (click)="addTocart(product)">
+                    <ion-icon ios="ios-add" md="md-add"></ion-icon>&nbsp;Add
+                  </button>
+                  <ion-buttons>
+                    <div [hidden]="!hidebutton[product.prodnum]">
+                      <input (click)="decrementQty(product)" type='button' value='-' class='qtyminus' field='quantity' />
+                      <input type='text' readonly name='quantity' [(ngModel)]="cartProductQty[product.prodnum]"
+                        class='qty' />
+                      <input (click)="incrementQty(product)" type='button' value='+' class='qtyplus' field='quantity' />
+                    </div>
+                  </ion-buttons>
+                  <span *ngIf="product.addons" class="custom-option"> Customisable </span>
+                </ion-col>
+              </ion-row>
+            </div>
+
+            <div *ngIf="product.products && product.open">
+              <!-- Third Level -->
+              <ion-row class="item-status-block" *ngFor="let item of product.products; let k = index" detail-none class="child-item"
+                text-wrap>
+
+                <ion-col col-8>
+                  <h2 class="item-title"><span class="diet-icon"><img [src]="item.diet"> </span>{{item.prodname}}</h2>
+                  <p class="page-tagline text-small">{{ item.information }}</p>
+                  <ion-badge class="duration_avaialability_badge" small outline color="themecolor">24 Available</ion-badge>
+                  <ion-badge class="duration_avaialability_badge" small outline color="themecolor">5 Min Wait</ion-badge>
+                  &nbsp;|&nbsp;<span class="item-price">&#8377;{{item.price1}}<br>
+                    <span *ngIf="product.offer" small class="item-bottom-offer">{{item.offer}}</span>
+                  </span>
+                </ion-col>
+                <ion-col col-4 class="addBtn">
+                  <button [hidden]="hidebutton[item.prodnum]" ion-button small item-end color="themecolor"
+                    (click)="addTocart(item)">
+                    <ion-icon ios="ios-add" md="md-add"></ion-icon>&nbsp;Add
+                  </button>
+                  <ion-buttons>
+                    <div [hidden]="!hidebutton[item.prodnum]">
+                      <input (click)="decrementQty(item)" type='button' value='-' class='qtyminus' field='quantity' />
+                      <input type='text' readonly name='quantity' [(ngModel)]="cartProductQty[item.prodnum]" class='qty' />
+                      <input (click)="incrementQty(item)" type='button' value='+' class='qtyplus' field='quantity' />
+                    </div>
+                  </ion-buttons>
+                  <span *ngIf="item.addons" class="custom-option"> Customisable </span>
+                </ion-col>
+              </ion-row>
+
+            </div>
+
+          </ion-list-header>
+        </ion-list>
+      </div>
+    </ion-list-header>
+  </ion-list>
+
+  <ion-row class="animate fadeInBottom search-pd-popup" [ngClass]="{'is-visible': openSearchMenu == true}" role="alert">
+
+    <ion-list class="accordion-list">
+      <!-- First Level -->
+      <ion-list-header *ngFor="let item of filterInfo; let i = index" no-padding [class]="'level' +item.level" [id]="item.name">
+
+        <div>
+          <!-- Toggle Button -->
+          <h2 ion-item>
+            {{ item.menu_name }}
+          </h2>
+
+          <ion-list>
+            <!-- Second Level -->
+            <ion-list-header *ngFor="let product of item.children; let j = index" no-padding>
+              <!-- Toggle Button -->
+              <!-- image checkon products -->
+              <button ion-item *ngIf="product.children" class="child" detail-none>
+                <span>{{ product.name }}</span><br>
+                <span class="page-tagline text-small">Pork chop meatloaf rump, meatball.</span>
+              </button>
+
+              <!-- Direct Add Button as Fallback -->
+              <div *ngIf="!product.children" ion-item detail-none class="child-item" text-wrap no-lines>
+
+                <ion-row class="item-status-block">
+
+                  <ion-col col-8>
+                    <h2 class="item-title"><span class="diet-icon"><img [src]="product.diet"> </span>{{product.name}}</h2>
+                    <p class="page-tagline text-small">{{ product.information }}</p>
+                    <ion-badge class="duration_avaialability_badge" small outline color="themecolor">24 Available</ion-badge>
+                    <ion-badge class="duration_avaialability_badge" small outline color="themecolor">5 Min Wait</ion-badge>
+                  </ion-col>
+                  <ion-col col-4 class="addBtn">
+                    <button [hidden]="hidebutton[product.prodnum]" ion-button small item-end color="themecolor"
+                      (click)="addTocart(product)">
+                      <ion-icon ios="ios-add" md="md-add"></ion-icon>&nbsp;Add
+                    </button>
+                    <ion-buttons>
+                      <div [hidden]="!hidebutton[product.prodnum]">
+                        <input (click)="decrementQty(product)" type='button' value='-' class='qtyminus' field='quantity' />
+                        <input type='text' readonly name='quantity' [(ngModel)]="cartProductQty[product.prodnum]"
+                          class='qty' />
+                        <input (click)="incrementQty(product)" type='button' value='+' class='qtyplus' field='quantity' />
+                      </div>
+                    </ion-buttons>
+                    <span *ngIf="product.addons" class="custom-option"> Customisable </span>
+                  </ion-col>
+                </ion-row>
+              </div>
+
+              <div *ngIf="product.children">
+                <!-- Third Level -->
+                <ion-row class="item-status-block" *ngFor="let item of product.children; let k = index" detail-none
+                  class="child-item" text-wrap>
+
+                  <ion-col col-8>
+                    <h2 class="item-title"><span class="diet-icon"><img [src]="item.diet"> </span>{{item.name}}</h2>
+                    <p class="page-tagline text-small">{{ item.information }}</p>
+                    <ion-badge class="duration_avaialability_badge" small outline color="themecolor">24 Available</ion-badge>
+                    <ion-badge class="duration_avaialability_badge" small outline color="themecolor">5 Min Wait</ion-badge>
+                  </ion-col>
+                  <ion-col col-4 class="addBtn">
+                    <button [hidden]="hidebutton[item.prodnum]" ion-button small item-end color="themecolor"
+                      (click)="addTocart(item)">
+                      <ion-icon ios="ios-add" md="md-add"></ion-icon>&nbsp;Add
+                    </button>
+                    <ion-buttons>
+                      <div [hidden]="!hidebutton[item.prodnum]">
+                        <input (click)="decrementQty(item)" type='button' value='-' class='qtyminus' field='quantity' />
+                        <input type='text' readonly name='quantity' [(ngModel)]="cartProductQty[item.prodnum]"
+                          class='qty' />
+                        <input (click)="incrementQty(item)" type='button' value='+' class='qtyplus' field='quantity' />
+                      </div>
+                    </ion-buttons>
+                    <span *ngIf="item.addons" class="custom-option"> Customisable </span>
+                  </ion-col>
+                </ion-row>
+
+              </div>
+
+            </ion-list-header>
+          </ion-list>
+        </div>
+      </ion-list-header>
+    </ion-list>
+  </ion-row>
+
+  <ion-row *ngIf="submenu?.length > 0">
+    <ion-row class="animate fadeInBottom cd-popup" (click)="backdropEvent()" [ngClass]="{'is-visible': openMenu == true}"
+      role="alert">
+      <div class="cd-popup-container">
+        <ion-list>
+          <ion-item class="bottom-menu-title" *ngFor="let menu of submenu">
+
+            <ion-label color="dark" (click)="scrollToElement(menu.menu_name)">{{menu.menu_name}}</ion-label>
+
+          </ion-item>
+        </ion-list>
+      </div> <!-- cd-popup-container -->
+    </ion-row>
+
+
+    <ion-row class="bottom-menu-btn">
+
+      <button small *ngIf="hideMenulist" (click)="openMenuforOutlet()" ion-button round color="dark">Menu&nbsp;<ion-icon
+          name="restaurant"></ion-icon></button>
+    </ion-row>
+  </ion-row>
+
+</ion-content>
+
+<ion-footer *ngIf="cartLength >0 ">
+  <cart cartdata='cartitem'></cart>
+</ion-footer>

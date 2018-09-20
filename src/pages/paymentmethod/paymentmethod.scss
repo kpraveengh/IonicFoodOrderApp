@@ -1,0 +1,23 @@
+page-paymentmethod {
+.cashback-offer-pay{
+    font-size: 12px;
+    color:map-get($colors,'success');
+    margin: 0px !important;
+
+}
+.card-header-md,.card-header-ios-md {
+    font-size: 14px;
+    color:map-get($colors, 'light' );
+    padding: 10px;
+    background:map-get($colors, 'themecolor' );
+}
+ion-item.item.item-block.item-md.item-radio {
+    font-size: 14px;
+    border-bottom: 1px solid #4404991c;
+}
+
+.input-wrapper{
+    display: block
+}
+
+}

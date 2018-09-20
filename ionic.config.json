@@ -1,0 +1,7 @@
+{
+  "name": "restoApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

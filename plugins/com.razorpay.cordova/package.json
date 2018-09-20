@@ -1,0 +1,53 @@
+{
+  "_from": "git+https://github.com/razorpay/razorpay-cordova.git",
+  "_id": "com.razorpay.cordova@1.3.12",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/com.razorpay.cordova",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/razorpay/razorpay-cordova.git",
+    "rawSpec": "https://github.com/razorpay/razorpay-cordova.git",
+    "saveSpec": "git+https://github.com/razorpay/razorpay-cordova.git",
+    "fetchSpec": "https://github.com/razorpay/razorpay-cordova.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "git+https://github.com/razorpay/razorpay-cordova.git#88db427ac25bcfe93bf8899bfc7fade239dbfa8f",
+  "_spec": "https://github.com/razorpay/razorpay-cordova.git",
+  "_where": "G:\\Angular\\Cozyorder\\CozyOrders",
+  "author": {
+    "name": "Razorpay Developers",
+    "email": "developers@razorpay.com",
+    "url": "https://razorpay.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/razorpay/razorpay-cordova/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Cordova/Phonegap bindings for Razorpay's Mobile SDKs",
+  "homepage": "https://github.com/razorpay/razorpay-cordova#readme",
+  "keywords": [
+    "razorpay",
+    "ecosystem:cordova",
+    "cordova",
+    "phonegap",
+    "ionic",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-browser"
+  ],
+  "license": "ISC",
+  "main": "Readme.md",
+  "name": "com.razorpay.cordova",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/razorpay/razorpay-cordova.git"
+  },
+  "scripts": {},
+  "version": "1.3.12"
+}

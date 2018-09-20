@@ -1,0 +1,39 @@
+@import "theme/variables.scss";
+
+page-profile {
+
+    .profile-image{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        box-shadow: 6px 10px 12px -7px #94949491;
+    }
+    .profile-view-bg{
+        width:100%;
+        background-image: linear-gradient(to top, #0f1664, #1a1672, #27147f, #350f8c, #440499);
+        padding: 20px 20px;
+        box-shadow: 0px 6px 20px 3px #c3c3c3ad;
+
+    }
+    .profile-view-bg{
+        background: url("../assets/imgs/avatar.png") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+     
+    }
+    .profile-data{
+        font-size:14px;
+    
+    }
+    ion-select.selectGender{
+        width: 100%;
+        max-width: 100%;
+      }
+    .update-btn-bottom{
+        margin:0 auto;
+        float: right;
+        text-align: center;
+    }
+}

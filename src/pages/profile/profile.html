@@ -1,0 +1,88 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-buttons >
+        <button ion-button icon-only>
+          <ion-label class="open-page-title">Profile</ion-label>    
+        </button>
+        </ion-buttons>
+  
+      <ion-buttons end>
+      <button ion-button  icon-only class="top-nav-search" (click)="editProfileInfo()">
+      <img src="assets/icon/pencil.png">
+      </button>
+    </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+
+  
+  
+  <ion-content >
+     
+   <ion-card>
+    <form #formCtrl="ngForm">
+        <div align="center" *ngIf="formCtrl.form.valid">            
+          <div class="profile-view-bg text-center">
+              <ion-row class="profile-view-page">
+                <ion-col col-12 class="choose-location-city-title text-center">
+                    <img class="profile-image" src="assets/imgs/avatar.png">               
+                   </ion-col>
+              </ion-row>
+            </div>       
+        </div>
+        <ion-list *ngIf="showProfileInfo" class="profile-info-view">
+              <ion-item>
+              <ion-icon name="person">
+                 <span class="profile-data"> {{person.name}}</span>
+              </ion-icon>
+             </ion-item>
+             <ion-item>
+                <ion-icon name="checkbox">
+                    <span class="profile-data"> {{person.gender}}</span>
+                </ion-icon>
+               </ion-item>
+               <ion-item>
+                  <ion-icon name="calendar">
+                      <span class="profile-data">  {{age}}</span>
+                  </ion-icon>
+                 </ion-item>
+          </ion-list>
+
+    <ion-list *ngIf="!showProfileInfo">
+
+      
+    <form #profileUpdateForm="ngForm" (ngSubmit)="profileUpdateConfirm()" autocomplete="off">
+
+        <ion-row  inset>
+          <ion-col class="profile-update-block-input-section"  col-md-3 offset-md-3 col-md-6 col-sm-12 col-xs-12>
+            <ion-list>
+              <ion-item class="login-block-option-one">
+                  <ion-label><ion-icon name="person"></ion-icon></ion-label>
+                  <ion-input type="text" [(ngModel)]="person.name" name="name" required></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-label>Gender</ion-label>
+                  <ion-select class="selectGender" [(ngModel)]="person.gender" name="gender" required>
+                    <ion-option value="Male">Male</ion-option>
+                    <ion-option value="Female">Female</ion-option>
+                  </ion-select>
+                </ion-item>
+              <ion-item>
+                  <ion-datetime full required name="birthdate" displayFormat="DD MMM YYYY" pickerFormat="DD MMM YYYY" [(ngModel)]="dob" [ngModelOptions]="{standalone:true}"></ion-datetime>
+              </ion-item>    
+          <ion-col class="update-btn-bottom">
+            <button ion-button color="themecolor" class="submit-btn" round type="Update" [disabled]="!profileUpdateForm.form.valid">Update
+            </button>
+          </ion-col>
+        </ion-list>
+      </ion-col>
+        </ion-row>
+      </form>
+      
+    <!-- <button color="danger" ion-button block (click)="reset()">Reset</button> -->
+  </ion-list>
+  </form>
+</ion-card>   
+  </ion-content>

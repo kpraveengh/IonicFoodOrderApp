@@ -1,0 +1,191 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-buttons (click)="presentProfileModal()" class="selected-location">
+      <button ion-button icon-only>
+        <ion-label class="selected-location-title">{{currentLocation}} &nbsp;<ion-icon end name="arrow-dropdown"></ion-icon></ion-label>    
+      </button>
+      </ion-buttons>
+
+    <ion-buttons end>   
+    <button ion-button  icon-only class="top-nav-search" (click)="goToSearch()">
+      <ion-icon  name="search"></ion-icon>
+    </button>
+  </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-slides pager class="homeSlider">
+
+    <ion-slide>
+     <img src="assets/imgs/1.jpg">
+    </ion-slide>
+  
+    <ion-slide>
+      <img src="assets/imgs/2.jpg">
+    </ion-slide>
+  
+    <ion-slide>
+      <img src="assets/imgs/3.jpg">
+    </ion-slide>
+  
+  </ion-slides>
+  <div class="home-curved-bg">
+
+        
+  </div>
+
+
+  <ion-grid class="store-grid-result">
+     
+<!-- recomendations -->
+<ion-item>
+    <ion-title class="preferces-title"><h2>Recommended Restaurants</h2></ion-title>
+  </ion-item>
+
+
+
+
+
+<ion-scroll scrollX="true" style="width:100vw; height:100px" >
+    <ion-row nowrap class="headerChip outer">
+          <ion-card class="slide-card-recom inner"  *ngFor="let recomStore of recomOutlets" (click)="goToMenu(recomStore.store_id,recomStore.org_id)">
+              <ion-item >
+                <ion-avatar item-start>
+                  <img src="assets/imgs/{{recomStore.logo}}">
+                </ion-avatar>
+                <h2>{{recomStore.store_name}}</h2>
+                <p>Breakfast Shakes, Exotic Addictions, Classic Shakes etc...</p>
+              </ion-item>    
+              <ion-row >                
+                <ion-col style="text-align:center">
+                    <ion-icon name="heart" color="danger"></ion-icon>
+                    <span>{{recomStore.favourite}}</span>
+                </ion-col>
+                <ion-col >
+                    <span class="recom-rating" [style.background-color]='success_color'>{{recomStore.rating}}</span>                  
+                </ion-col>
+              </ion-row>    
+            </ion-card>
+    </ion-row>
+  </ion-scroll>
+
+  <!-- recommendations end -->
+
+  <ion-item>
+      <ion-label end class="veg_type_title"> 
+        <span (click)="filterdata('Sorting')">Sort&nbsp;<img src="assets/imgs/sort-order.png" style="width:12px"></span
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span (click)="filterdata('Filter')">Filter&nbsp;<img src="assets/imgs/filter.png" style="max-height: 10px;"></span></ion-label>
+  
+    </ion-item>
+
+    <!-- first row started -->
+    <ion-list>
+      <span class="spark-anim"></span>
+        <ion-item class="home-outlet">
+          <ion-thumbnail item-start>
+         
+            <img src="https://www.parhlo.com/wp-content/uploads/2017/01/63-80x80.jpg">
+        
+            <div class="rank-label-container">
+                <span class="label label-default rank-label">EXCLUSIVE</span>
+            </div>
+          
+              <!-- <div class="ribbon"><span>POPULAR</span></div> -->
+          </ion-thumbnail>
+          <div class="home-outlet-info">
+          <h2>Thick Shake Factory - Kondapur</h2>
+          <p>Burgers, Cakes, Chocolates, Milkshakes..</p>
+
+          <div class="home-outlet-offer-info">
+              <div class="burst-8-point">%</div>&nbsp;Free Delivery, 10% OFF
+            </div>
+
+          <!-- <div class="home-outlet-open-close">
+            <p>Restaurant will open shortly</p>
+          </div> -->
+          <hr>
+          
+          <ul class="outlet-extra-info">
+            <li><span><i class="far fa-clock"></i>&nbsp;30 MIN </span></li>
+                <li>|</li>
+                <li>
+                   <span class="far fa-star"></span>&nbsp;4.2
+    
+                </li>
+                <li>|</li>
+                <li>
+                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                  <span><i class="fa fa-rupee-sign"></i></span>&nbsp;200 FOR TWO
+                </li>
+          </ul>
+         </div>
+        </ion-item>
+      </ion-list>
+
+    
+    <ion-list *ngFor="let allStore of outletsAll">
+        
+        <ion-item class="home-outlet">
+          <ion-thumbnail item-start>
+              <span class="spark-anim"></span>
+            <img src="https://www.parhlo.com/wp-content/uploads/2017/01/63-80x80.jpg">
+            <div class="rank-label-container">
+                <span class="label label-default rank-label">Popular</span>
+            </div>
+              <!-- <div class="ribbon"><span>POPULAR</span></div> -->
+          </ion-thumbnail>
+          <div class="home-outlet-info">
+          <h2>{{allStore.store_name}}</h2>
+          <p>Burgers, Cakes, Chocolates, Milkshakes..</p>
+
+          <!-- <div class="home-outlet-offer-info">
+              <p>Offer Available</p>
+            </div> -->
+
+          <div class="home-outlet-open-close">
+            <p>Restaurant will open shortly</p>
+          </div>
+          <hr>
+          
+          <ul class="outlet-extra-info">
+            <li><span><i class="far fa-clock"></i>&nbsp;30 MIN </span></li>
+                <li>|</li>
+                <li>
+                   <span class="far fa-star"></span>&nbsp;4.2
+    
+                </li>
+                <li>|</li>
+                <li>
+                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                  <span><i class="fa fa-rupee-sign"></i></span>&nbsp;200 FOR TWO
+                </li>
+          </ul>
+         </div>
+        </ion-item>
+      </ion-list>
+
+
+      
+
+            <!-- second row end -->
+        </ion-grid>
+       
+         
+    <div #pleaseConnect id="please-connect">
+      <p>Please connect to the Internet...</p>
+  </div>
+
+  <div #map id="map">
+      <ion-spinner></ion-spinner>
+  </div>
+</ion-content>
+
+<ion-footer *ngIf="cartLength > 0">
+  <cart cartdata='cartitem'></cart>
+</ion-footer>

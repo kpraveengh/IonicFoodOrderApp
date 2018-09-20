@@ -1,0 +1,15 @@
+page-currentorders {
+    .order-history-data 
+    {
+        border-left:1px solid map-get($colors, success);
+            h2{
+                color:map-get($colors, success);
+                margin:5px 0px;
+            }       
+        }
+        .price-orderdate{
+            font-size:14px;
+            font-weight: normal;
+            color:map-get($colors, success )
+        }
+}

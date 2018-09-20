@@ -1,0 +1,26 @@
+cart {
+    .cart-component-footer{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 100%;
+        max-height: 50px;
+        text-align: center;
+        background-image: linear-gradient(to right top, #0aae2e, #31ad26, #45ac1d, #55ab12, #62aa05);
+    }
+    .footer-cartinfo-left{
+        line-height: 0px;
+        padding:10px 10px 0px 10px;
+        float:left;
+        color: map-get($colors,light )
+    }
+    .footer-cart-info-right{
+    line-height: 8px;
+    color: map-get($colors,light )
+    }
+    h6{
+        font-size:1.2rem;
+        line-height: 0px;
+    }
+
+}

@@ -1,0 +1,225 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-buttons>
+        <button ion-button icon-only>
+          <ion-label class="open-page-title">My Favourites</ion-label>    
+        </button>
+        </ion-buttons>
+  
+      <ion-buttons end>
+      <button ion-button  icon-only class="top-nav-search" (click)="goToSearch()">
+        <ion-icon  name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+    </ion-navbar>
+
+
+
+    <ion-navbar color="light" class="menu-category-list">
+        <ion-header>
+            <ion-toolbar>
+              <ion-segment [(ngModel)]="favType" color="themecolor">            
+                <ion-segment-button class="favtype_option" value="favRestaurants" (ionSelect)="fav_data('favRestaurants')">
+                  Restaurants
+                </ion-segment-button>
+          
+                <ion-segment-button class="favtype_option" value="favFood" (ionSelect)="fav_data('favFood')">
+                 Favourite Food
+                </ion-segment-button>          
+              </ion-segment>
+            </ion-toolbar>
+          </ion-header>       
+      </ion-navbar>
+  </ion-header>
+
+
+
+
+  <ion-content>
+    <ion-item>
+      <ion-title class="preferces-title"><h2>Favourite Restaurants</h2></ion-title>
+    </ion-item>
+    <ion-card>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/imgs/tsf-logo.png">
+        </ion-avatar>
+        <h2>Thick Shake Factory</h2>
+        <p>Breakfast Shakes, Exotic Addictions, Classic Shakes etc...</p>
+      </ion-item>    
+      <ion-row>
+        <ion-col>
+          <button ion-button color="themecolor" icon-start clear small>
+            <ion-icon name="star"></ion-icon>
+            <div>5/78</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button color="themecolor" icon-start clear small>
+            <ion-icon name="heart"></ion-icon>
+            <div>40</div>
+          </button>
+        </ion-col>
+      </ion-row>    
+    </ion-card>
+
+    <!-- second store -->
+    <ion-card>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/imgs/tsf-logo.png">
+        </ion-avatar>
+        <h2>Thick Shake Factory</h2>
+        <p>Breakfast Shakes, Exotic Addictions, Classic Shakes etc...</p>
+      </ion-item>    
+      <ion-row>
+        <ion-col>
+          <button ion-button color="themecolor" icon-start clear small>
+            <ion-icon name="star"></ion-icon>
+            <div>5/78</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button color="themecolor" icon-start clear small>
+            <ion-icon name="heart"></ion-icon>
+            <div>40</div>
+          </button>
+        </ion-col>
+      </ion-row>    
+    </ion-card>
+    
+
+    <ion-list>
+
+
+    <ion-card>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/imgs/tsf-logo.png">
+        </ion-avatar>
+        <h2>Thick Shake Factory</h2>
+        <p>Breakfast Shakes, Exotic Addictions, Classic Shakes etc...</p>
+      </ion-item>    
+      <ion-row>
+        <ion-col>
+          <button ion-button color="themecolor" icon-start clear small>
+            <ion-icon name="star"></ion-icon>
+            <div>5/78</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button color="themecolor" icon-start clear small>
+            <ion-icon name="heart"></ion-icon>
+            <div>40</div>
+          </button>
+        </ion-col>
+      </ion-row>    
+    </ion-card>
+    
+    </ion-list>
+    <ion-item>
+        <ion-title class="preferces-title"><h2>Popular Restaurants</h2></ion-title>
+      </ion-item>
+
+    <ion-scroll scrollX="true" style="width:100vw; height:150px" >
+        <ion-row nowrap class="headerChip">
+              <ion-card>
+                  <ion-item>
+                    <ion-avatar item-start>
+                      <img src="assets/imgs/tsf-logo.png">
+                    </ion-avatar>
+                    <h2>Thick Shake Factory</h2>
+                    <p>Breakfast Shakes, Exotic Addictions, Classic Shakes etc...</p>
+                  </ion-item>    
+                  <ion-row>
+                    <ion-col>
+                      <button ion-button color="themecolor" icon-start clear small>
+                        <ion-icon name="star"></ion-icon>
+                        <div>5/78</div>
+                      </button>
+                    </ion-col>
+                    <ion-col>
+                      <button ion-button color="themecolor" icon-start clear small>
+                        <ion-icon name="heart"></ion-icon>
+                        <div>40</div>
+                      </button>
+                    </ion-col>
+                  </ion-row>    
+                </ion-card>
+                <ion-card>
+                    <ion-item>
+                      <ion-avatar item-start>
+                        <img src="assets/imgs/tsf-logo.png">
+                      </ion-avatar>
+                      <h2>Thick Shake Factory</h2>
+                      <p>Breakfast Shakes, Exotic Addictions, Classic Shakes etc...</p>
+                    </ion-item>    
+                    <ion-row>
+                      <ion-col>
+                        <button ion-button color="themecolor" icon-start clear small>
+                          <ion-icon name="star"></ion-icon>
+                          <div>5/78</div>
+                        </button>
+                      </ion-col>
+                      <ion-col>
+                        <button ion-button color="themecolor" icon-start clear small>
+                          <ion-icon name="heart"></ion-icon>
+                          <div>40</div>
+                        </button>
+                      </ion-col>
+                    </ion-row>    
+                  </ion-card>
+                  <ion-card>
+                      <ion-item>
+                        <ion-avatar item-start>
+                          <img src="assets/imgs/tsf-logo.png">
+                        </ion-avatar>
+                        <h2>Thick Shake Factory</h2>
+                        <p>Breakfast Shakes, Exotic Addictions, Classic Shakes etc...</p>
+                      </ion-item>    
+                      <ion-row>
+                        <ion-col>
+                          <button ion-button color="themecolor" icon-start clear small>
+                            <ion-icon name="star"></ion-icon>
+                            <div>5/78</div>
+                          </button>
+                        </ion-col>
+                        <ion-col>
+                          <button ion-button color="themecolor" icon-start clear small>
+                            <ion-icon name="heart"></ion-icon>
+                            <div>40</div>
+                          </button>
+                        </ion-col>
+                      </ion-row>    
+                    </ion-card>
+                    <ion-card>
+                        <ion-item>
+                          <ion-avatar item-start>
+                            <img src="assets/imgs/tsf-logo.png">
+                          </ion-avatar>
+                          <h2>Thick Shake Factory</h2>
+                          <p>Breakfast Shakes, Exotic Addictions, Classic Shakes etc...</p>
+                        </ion-item>    
+                        <ion-row>
+                          <ion-col>
+                            <button ion-button color="themecolor" icon-start clear small>
+                              <ion-icon name="star"></ion-icon>
+                              <div>5/78</div>
+                            </button>
+                          </ion-col>
+                          <ion-col>
+                            <button ion-button color="themecolor" icon-start clear small>
+                              <ion-icon name="heart"></ion-icon>
+                              <div>40</div>
+                            </button>
+                          </ion-col>
+                        </ion-row>    
+                      </ion-card>
+        </ion-row>
+      </ion-scroll>
+
+
+  </ion-content>

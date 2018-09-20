@@ -1,0 +1,22 @@
+
+
+@import "theme/variables.scss";
+page-preferences {
+.preferces-title h2{
+    color:map-get($colors,themecolor )
+}
+.headerChip{
+    width:1000px;
+}
+
+::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none;
+}
+.card-md + ion-card {
+    margin-top: 10px;
+}
+.favtype_option{
+    width:50% !important;
+}
+}

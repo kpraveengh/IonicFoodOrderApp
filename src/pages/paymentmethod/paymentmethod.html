@@ -1,0 +1,146 @@
+
+
+  <ion-header>
+      <ion-navbar>
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-buttons >
+            <button ion-button icon-only>
+              <ion-label class="open-page-title">Payment Method </ion-label>           
+            </button>
+            </ion-buttons>
+        <ion-buttons end>
+       
+        <button ion-button  icon-only >
+            <ion-label>784.00</ion-label>
+        </button>
+      </ion-buttons>
+      </ion-navbar>
+    </ion-header>
+
+    
+  <ion-content>
+      <ion-card>
+          <ion-card-header>
+              INTERNAL WALLET
+            </ion-card-header>
+          <ion-list radio-group [(ngModel)]="relationship" style="line-height: 30px;">
+            <ion-row style="display: flex;">
+            <ion-col col-2>
+              <img src="assets/icon/pay1.png">
+            </ion-col>
+            <ion-col col-10 >
+              <ion-item style="line-height: 30px;">
+                <ion-label>Cozy Wallet (Rs 650.00)</ion-label>
+                <ion-label class="cashback-offer-pay">10% Cashback</ion-label>
+             
+                <ion-radio value="friends" checked></ion-radio>
+                <span>10Rs Cashback</span>  
+              </ion-item>
+            </ion-col>
+            </ion-row>
+           
+            </ion-list>
+          </ion-card>
+    
+      <ion-card>
+      <ion-card-header>
+          WALLETS
+        </ion-card-header>
+      <ion-list radio-group [(ngModel)]="relationship">
+          <ion-item>
+            <ion-label>Paytm</ion-label>
+         
+            <ion-radio value="friends" checked></ion-radio>
+            <span>10Rs Cashback</span>  
+          </ion-item>
+          <ion-item>
+            <ion-label>PhonePay</ion-label>
+            <ion-radio value="family"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Freecharge</ion-label>
+            <ion-radio value="enemies" [disabled]="isDisabled"></ion-radio>
+          </ion-item>
+        </ion-list>
+        <ion-item>
+            <button item-end ion-button color="themecolor" round outline (click)="addNewPayMethod()">Add New</button>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+          <ion-card-header>
+              CREDIT/DEBIT CARDS
+            </ion-card-header>
+          <ion-list radio-group [(ngModel)]="relationship">
+              <ion-item>
+                <ion-label>4582-XXXX-XXXX-5689</ion-label>
+                <ion-radio value="friends" checked></ion-radio>
+              </ion-item>
+            </ion-list>
+            <ion-item>
+                <button item-end ion-button color="themecolor" round outline (click)="addNewCard()">Add New</button>
+            </ion-item>
+          </ion-card>
+
+          <ion-row *ngIf="newCardForm">
+              <ion-card>
+                  <ion-card-header>
+                      ADD NEW CARD
+                    </ion-card-header>
+            <ion-col>
+
+                <form  #registerForm="ngForm">
+                    <ion-row>
+                      <ion-col>
+                        <ion-list inset>
+              
+                          <ion-item>
+                            <ion-input type="text" placeholder="CARD NUMBER" name="name" [(ngModel)]="number" required></ion-input>
+                          </ion-item>
+              
+                          <ion-item>
+                              <ion-datetime full required name="birthdate" displayFormat="DD MMM YYYY" pickerFormat="MMM YYYY" [(ngModel)]="expDate" [ngModelOptions]="{standalone:true}"></ion-datetime>
+                          </ion-item>
+              
+                          <ion-item>
+                            <ion-input type="password" placeholder="CVV" name="cvv" [(ngModel)]="cvv" required></ion-input>
+                          </ion-item>
+
+              
+                        </ion-list>
+                      </ion-col>
+                    </ion-row>
+              
+                    <ion-row>
+                      <ion-col class="signup-col" style="text-align: center">
+                        <button ion-button class="submit-btn" type="submit" [disabled]="!registerForm.form.valid">SAVE & CONTINUE</button>
+                        <button ion-button class="submit-btn" type="submit" [disabled]="!registerForm.form.valid" color="success">PAY 784.00</button>
+                      </ion-col>
+                    </ion-row>
+              
+
+                                <ion-row class="checkout-action-block">
+                          <ion-col col-6 text-center>
+                              <button ion-button round default item-end color="light"> <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>&nbsp;Back</button>                                          
+                          </ion-col>
+                          <ion-col col-6 text-center>
+                              <button ion-button round default item-end color="themecolor" (click)="checkoutorder()">Checkout &nbsp;<ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward"></ion-icon></button>                                          
+                          </ion-col>
+                        </ion-row>
+                  </form>
+          </ion-col>
+          </ion-card>
+          
+          </ion-row>
+          <ion-row class="checkout-action-block">
+            <ion-col col-6 text-center>
+                <button ion-button round default item-end color="light"> <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>&nbsp;Back</button>                                          
+            </ion-col>
+            <ion-col col-6 text-center>
+                <button ion-button round default item-end color="themecolor" (click)="pay()">Pay &nbsp;<ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward"></ion-icon></button>                                          
+            </ion-col>
+          </ion-row>
+          
+</ion-content>

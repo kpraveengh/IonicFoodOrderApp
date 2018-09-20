@@ -1,0 +1,64 @@
+<!-- 
+  <ion-content padding id="login-block" >
+    <form #loginForm="ngForm" (ngSubmit)="login()" autocomplete="off">
+
+      <ion-row  inset>
+        <ion-col class="login-block-input-section"  col-md-3 offset-md-3 col-md-6 col-sm-12 col-xs-12>
+            <h1 text-center>Cozy Corporate</h1>
+          <ion-list>
+            <ion-item class="login-block-option-one">
+                <ion-label><ion-icon name="person"></ion-icon></ion-label>
+              <ion-input placeholder="Email" name="username" id="loginField" type="text" required [(ngModel)]="username" #email></ion-input>
+            </ion-item>
+            <ion-item class="login-block-option-two">
+                <ion-label><ion-icon name="lock"></ion-icon></ion-label>
+              <ion-input placeholder="Password" name="password" id="passwordField" type="password" required [(ngModel)]="password"></ion-input>
+            </ion-item>
+              <ion-item no-lines color="trans">
+                  <ion-label color="light">Remember me</ion-label>
+                  <ion-checkbox name="Remember" color="primary"  [(ngModel)]="rmchecked" checked='rmchecked'  (ionChange)="LoginRemCheck()"></ion-checkbox>
+                  </ion-item>
+  
+        <ion-col responsive-sm class="login-btn-bottom">
+          <button ion-button color="themecolor" class="submit-btn login-btn" round block type="submit" [disabled]="!loginForm.form.valid">Login
+          </button>
+        </ion-col>
+      </ion-list>
+    </ion-col>
+      </ion-row>
+    </form>
+  </ion-content> -->
+
+    <ion-content class="login-second-style">
+        <ion-grid class="login-title-grid">
+          <div class="login-title-bg">
+           <h2>COZY ORDERS</h2>
+          </div>
+          </ion-grid>
+      <ion-grid class="login-info-grid" padding >
+          <ion-card>
+            <ion-card-content>
+                <form #loginForm="ngForm" (ngSubmit)="login()" autocomplete="off">
+              <ion-item>
+                <ion-label floating color="primary">Username</ion-label>
+                <ion-input type="text" #username></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label floating>Password</ion-label>
+                <ion-input type="password" #password></ion-input>
+              </ion-item>
+              <ion-item no-lines color="trans">
+                  <ion-label color="light">Remember me</ion-label>
+                  <ion-checkbox name="Remember" color="primary"  [(ngModel)]="rmchecked" checked='rmchecked'  (ionChange)="LoginRemCheck()"></ion-checkbox>
+                  </ion-item>
+              <ion-grid>
+                <button ion-button class="submit-btn login-btn" round block type="submit" [disabled]="!loginForm.form.valid" style="background-image: linear-gradient(to left, #440499, #4804aa, #4c03bc, #4f04ce, #5205e1);">Login</button>
+              </ion-grid>
+            </form>
+            </ion-card-content>
+          </ion-card>
+          <ion-row class="text-center" style="margin:10px auto">
+          <span>New User ?&nbsp;&nbsp;-&nbsp;&nbsp;<span style="color: #4b03b7;" (click)="createAccount()">Signup</span></span>
+          </ion-row>
+      </ion-grid>
+    </ion-content>

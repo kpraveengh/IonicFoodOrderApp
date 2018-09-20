@@ -1,0 +1,18 @@
+<div class="cart-component-footer">
+
+  <ion-row>
+    <ion-col col-8>
+      <div class="footer-cartinfo-left">
+        <span style="font-size: 10px; font-weight: normal"> {{cartLength}} Items in cart</span>
+        <h6>&#8377;&nbsp;{{priceTotal.toFixed(2)}}&nbsp;<span style="font-size: 10px;font-weight: normal"> + Tax</span>
+        </h6>
+      </div>
+    </ion-col>
+    <ion-col col-4 (click)="viewCartInfo()">
+      <div class="footer-cart-info-right">
+        <span>View Cart <ion-icon name="arrow-forward"></ion-icon></span>
+      </div>
+    </ion-col>
+  </ion-row>
+
+</div>

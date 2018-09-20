@@ -1,0 +1,293 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+// Font path is used to include ionicons,
+// roboto, and noto sans fonts
+$font-path: "../assets/fonts";
+
+
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+
+
+@import "ionic.globals";
+
+// imported fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+@import url('https://fonts.googleapis.com/css?family=Lora|Open+Sans|Quattrocento+Sans|Questrial');
+
+$primaryfont:'ProximaNova,Arial,Helvetica Neue',sans-serif;
+ $primaryfont2:'Roboto', sans-serif;
+$primaryfont3: 'Lato', sans-serif;
+$primaryfont4: 'Open Sans', sans-serif;
+$primaryfont5: 'Lora', serif;
+$primaryfon6: 'Questrial', sans-serif;
+$primaryfont7: 'Quattrocento Sans', sans-serif;
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
+
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    #488aff,
+  secondary:  #32db64,
+  success:	#02a532,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #222,
+  themecolor:#440499,
+  trans:rgba(255,255,255,0)
+);
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";
+
+
+
+
+// customized styles
+
+// $loading-ios-background: transparent;
+// $loading-md-background: $loading-ios-background;
+// $loading-wp-background: $loading-ios-background;
+
+
+$themecolor:#440499;
+$homeslidemaxheight:260px;
+
+.headerfontstyle{  
+color: map-get($colors, light);
+font-size: 14px;
+font-weight: normal;
+}
+
+.location-arrow-down{
+  vertical-align: middle;
+}
+
+ion-badge[outline],
+ion-badge[outline][color="primary"] {
+	color: color($colors, primary, base);
+	border: solid 1px color($colors, primary, base);
+	background: none;
+}
+
+ion-badge[outline][color="secondary"] {
+	color: color($colors, secondary, base);
+	border: solid 1px color($colors, secondary, base);
+	background: none;
+}
+
+ion-badge[outline][color="secondary"] {
+	color: color($colors, secondary, base);
+	border: solid 1px color($colors, secondary, base);
+	background: none;
+}
+
+ion-badge[outline][color="danger"] {
+	color: color($colors, danger, base);
+	border: solid 1px color($colors, danger, base);
+	background: none;
+}
+
+ion-badge[outline][color="light"] {
+	color: color($colors, light, base);
+	border: solid 1px color($colors, light, base);
+	background: none;
+}
+
+ion-badge[outline][color="dark"] {
+	color: color($colors, dark, base);
+	border: solid 1px color($colors, dark, base);
+	background: none;
+}
+ion-badge[outline][color="themecolor"] {
+	color: color($colors, themecolor, base);
+	border: solid 1px color($colors, themecolor, base);
+	background: none;
+}
+
+
+
+.top-nav-cart-icon{
+	margin-right: 30px;
+}
+.cart-qty-block{
+	width: 24px;
+    height: 24px;
+    padding: 2px;
+    border-radius: 50%;
+    background: map-get($colors, light);
+    position: absolute;
+    top: 10px;
+	left: 16px;
+	line-height: 22px;
+	text-align: center;
+	color: map-get($colors,themecolor );
+	font-size:10px;
+}
+
+*:focus,
+*:active,
+a:active,
+a:focus,
+input:focus,
+input:active { 
+    -moz-outline-style: none;
+	outline:none;
+	outline: 0;
+	border:none;
+}
+.open-page-title{
+	text-transform: capitalize;
+	font-weight: normal;
+}
+.add-favourite-icon {
+    position: relative;
+	left: 0;
+	float: left;
+    top: 2px;
+    color: red !important;
+	font-size: 20px;
+	width:30px;
+	height: 30px;
+	border-radius: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+	line-height: 38px;
+	.fav-count{
+		position: relative;
+		top: -42px;
+		left: 26px;
+		font-size: 14px;
+	}
+
+}
+
+// reference https://gist.github.com/EmranAhmed/8044351
+
+// /* Custom, iPhone Retina */ 
+// @media only screen and (min-width : 320px) {
+    
+// }
+ 
+// /* Extra Small Devices, Phones */ 
+// @media only screen and (min-width : 480px) {
+ 
+// }
+ 
+// /* Small Devices, Tablets */
+// @media only screen and (min-width : 768px) {
+ 
+// }
+ 
+// /* Medium Devices, Desktops */
+// @media only screen and (min-width : 992px) {
+ 
+// }
+ 
+// /* Large Devices, Wide Screens */
+// @media only screen and (min-width : 1200px) {
+ 
+// }
+ 
+ 
+// /*==========  Non-Mobile First Method  ==========*/
+ 
+// /* Large Devices, Wide Screens */
+// @media only screen and (max-width : 1200px) {
+ 
+// }
+ 
+// /* Medium Devices, Desktops */
+// @media only screen and (max-width : 992px) {
+ 
+// }
+ 
+// /* Small Devices, Tablets */
+// @media only screen and (max-width : 768px) {
+ 
+// }
+ 
+// /* Extra Small Devices, Phones */ 
+// @media only screen and (max-width : 480px) {
+ 
+// }
+ 
+// /* Custom, iPhone Retina */ 
+// @media only screen and (max-width : 320px) {
+    
+// }
+
+
+.store_category_slogan{
+    font-size: 10px !important;
+    color: #505050 !important;
+}
+.rating-desc{
+	margin-top:10px;
+}
+
+

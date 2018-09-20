@@ -1,0 +1,109 @@
+<ion-header>
+    <ion-navbar>
+        <ion-buttons>
+      <button ion-button icon-only color="trans" (click)="closeFilterModal()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+        <button ion-button *ngIf="dataForSorting">
+          <ion-label>Sort Restaurants</ion-label>    
+        </button>
+        <button ion-button *ngIf="dataForFilter">
+            <ion-label>Filter Restaurants</ion-label>    
+          </button>
+        </ion-buttons>
+      <ion-buttons end>
+  
+    </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+  <ion-content *ngIf="dataForSorting">
+<ion-list radio-group >
+    <ion-item>
+      <ion-label>Rating (High to Low)</ion-label>
+      <ion-radio value="rating_htol"></ion-radio>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Rating (Low to High)</ion-label>
+      <ion-radio value="rating_ltoh"></ion-radio>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Price (High to Low)</ion-label>
+      <ion-radio value="price_htol"></ion-radio>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Price (Low to High)</ion-label>
+      <ion-radio value="price_ltoh"></ion-radio>
+    </ion-item>
+<ion-item text-center>
+    <button ion-button round small color="themecolor" (click)="closeFilterModal()">Apply&nbsp;  <ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward"></ion-icon></button>
+  </ion-item>
+  </ion-list>
+</ion-content>
+<ion-content *ngIf="dataForFilter">
+  <ion-list   scrollY="true"> 
+    <ion-row>
+        <ion-col>
+            <ion-item>
+                <ion-label>Veg</ion-label>
+                <ion-checkbox [(ngModel)]="filter_veg"></ion-checkbox>
+              </ion-item>
+        </ion-col>
+        <ion-col>
+            <ion-item>
+                <ion-label>Non-Veg</ion-label>
+                <ion-checkbox [(ngModel)]="filter_nonveg"></ion-checkbox>
+              </ion-item>
+        </ion-col>
+      <ion-col>
+          <ion-item>
+              <ion-label>American</ion-label>
+              <ion-checkbox [(ngModel)]="filter_type"></ion-checkbox>
+            </ion-item>
+      </ion-col>
+      <ion-col>
+          <ion-item>
+              <ion-label>Beverages</ion-label>
+              <ion-checkbox [(ngModel)]="filter_type"></ion-checkbox>
+            </ion-item>
+      </ion-col>
+      <ion-col>
+          <ion-item>
+              <ion-label>Kebabs</ion-label>
+              <ion-checkbox [(ngModel)]="filter_type"></ion-checkbox>
+            </ion-item>
+      </ion-col>
+      <ion-col>
+          <ion-item>
+              <ion-label>Pizzas</ion-label>
+              <ion-checkbox [(ngModel)]="filter_type"></ion-checkbox>
+            </ion-item>
+      </ion-col>
+      <ion-col>
+          <ion-item>
+              <ion-label>Salads</ion-label>
+              <ion-checkbox [(ngModel)]="filter_type"></ion-checkbox>
+            </ion-item>
+      </ion-col>
+      <ion-col>
+          <ion-item>
+              <ion-label>Snacks</ion-label>
+              <ion-checkbox [(ngModel)]="filter_type"></ion-checkbox>
+            </ion-item>
+      </ion-col>
+      <ion-col>
+          <ion-item>
+              <ion-label>Cafe</ion-label>
+              <ion-checkbox [(ngModel)]="filter_type"></ion-checkbox>
+            </ion-item>
+      </ion-col>
+      <ion-item text-center>
+          <button ion-button round small color="themecolor" (click)="closeFilterModal()">Apply&nbsp;  <ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward"></ion-icon></button>
+        </ion-item>
+    </ion-row>
+ 
+    
+    </ion-list>
+  </ion-content>

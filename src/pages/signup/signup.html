@@ -1,0 +1,42 @@
+
+
+<ion-content class="login-second-style">
+  <ion-grid class="login-title-grid">
+    <div class="login-title-bg">
+     <h2>COZY ORDERS</h2>
+    </div>
+    </ion-grid>
+<ion-grid class="login-info-grid" padding >
+    <ion-card>
+      <ion-card-content>
+          <form (ngSubmit)="register()" #registerForm="ngForm">
+        <ion-item>
+          <ion-label floating color="primary">Name</ion-label>
+          <ion-input type="text"  name="name" [(ngModel)]="registerCredentials.name" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Email</ion-label>
+            <ion-input type="password"  name="password" [(ngModel)]="registerCredentials.email" required></ion-input>
+          </ion-item>
+        <ion-item>
+          <ion-label floating>Password</ion-label>
+          <ion-input type="password"  name="password" [(ngModel)]="registerCredentials.password" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Confirm Password</ion-label>
+          <ion-input type="password"  name="confirmation_password" [(ngModel)]="registerCredentials.confirmation_password" required></ion-input>
+        </ion-item>
+        <ion-grid>
+            <button ion-button class="submit-btn" round block type="submit" [disabled]="!registerForm.form.valid" style="background-image: linear-gradient(to left, #440499, #4804aa, #4c03bc, #4f04ce, #5205e1);">Register</button>
+        </ion-grid>
+      </form>
+      </ion-card-content>
+    </ion-card>
+    <ion-row class="text-center" style="margin:10px auto">
+        <span style="color: #4b03b7;" (click)="backtoLogin()"><ion-icon name="arrow-back"></ion-icon>&nbsp;&nbsp;Back to Login</span>
+        </ion-row>
+ 
+</ion-grid>
+</ion-content>
+
+
